@@ -1,259 +1,604 @@
-# Engineering Tech Stacks & App Development Framework
+# 🔥 Unified Engineering & App Development Stack
 
-Welcome! This repository contains **three comprehensive approaches** to building tech stacks for biomedical and mechanical engineering, app development, and data engineering. Each stack is designed for different use cases, team sizes, and engineering approaches.
+**A complete, production-grade ecosystem for engineering workflows, full-stack app development, and domain systems like GlucoLoop, HeartWire, HealthHelper, and JonnyJr.**
 
-## 📁 Three Tech Stack Options
-
-### 🎯 [01_Comprehensive_TechStack](./01_Comprehensive_TechStack/)
-**The "Kitchen Sink" Approach - Maximum Coverage**
-
-### 🚀 [02_Optimized_TechStack](./02_Optimized_TechStack/)
-**The "Focused & Efficient" Approach - Strategic Core Tools**
-
-### 💻 [03_App-Development-Framework](./03_App-Development-Framework/)
-**The "Full-Stack Application" Approach - Modern Web & Mobile Development**
+> Built by **Jonny Terrero** — Biomedical Engineering × Software Engineering × Systems Design
 
 ---
 
-## 🎯 Tech Stack Comparison & Use Cases
+## 🧭 Overview
 
-### 01_Comprehensive_TechStack: The Research & Enterprise Solution
+This monorepo combines:
 
-**Functionality:**
-- **Extensive Tool Coverage**: Includes MATLAB, Python, R, SolidWorks, ANSYS, COMSOL, and 50+ specialized engineering tools
-- **Multi-Disciplinary Support**: Covers biomedical, mechanical, electrical, and materials engineering
-- **Advanced Simulation**: FEA, CFD, electromagnetic, and multiphysics simulation capabilities
-- **Professional CAD**: Industry-standard 3D modeling and design tools
-- **Medical Imaging**: Specialized tools for biomedical image processing and analysis
+- 🧪 **Engineering Tech Stack**  
+  MATLAB, Python, simulation, CAD/FEA, data pipelines.
 
-**Why It Works for Different Engineering Approaches:**
-- ✅ **Research Institutions**: Provides all tools needed for diverse research projects without limitations
-- ✅ **Large Engineering Teams**: Each specialist can use their preferred tools while maintaining compatibility
-- ✅ **Academic Environments**: Covers curriculum requirements across multiple engineering disciplines
-- ✅ **Enterprise Companies**: Supports complex, multi-faceted engineering projects with specialized software
-- ✅ **Exploratory Projects**: Allows experimentation with different tools to find the best fit
+- 🖥 **App Development Framework**  
+  Next.js, React, Flutter, Express/FastAPI, PostgreSQL.
 
-**Best For:**
-- Large teams with specialized roles
-- Research institutions with diverse needs
-- Academic environments with broad curriculum requirements
-- Companies with multiple engineering disciplines
-- Projects requiring advanced simulation and analysis
+- ☁️ **DevOps & Cloud**  
+  Docker, GitHub Actions, AWS/GCP deployment patterns.
 
-**Considerations:**
-- Higher cost (many commercial licenses)
-- Steeper learning curve
-- Requires significant setup time
-- More maintenance overhead
+- 🩺 **Domain Systems**  
+  GlucoLoop (glucose analytics), HeartWire (central hub), HealthHelper (health tracking), JonnyJr (AI super-agent).
+
+The goal: one cohesive repo that can support everything from **research prototypes** to **production apps** and **AI-assisted workflows**.
 
 ---
 
-### 02_Optimized_TechStack: The Efficient & Focused Solution
+## 📚 Table of Contents
 
-**Functionality:**
-- **Core Foundation**: Built around MATLAB + Python + SQL - the essential engineering trio
-- **Strategic Additions**: FastAPI, React, PostgreSQL, Docker for complete application development
-- **Engineering Tools**: FreeCAD, ParaView, Jupyter for essential engineering tasks
-- **Full-Stack Capability**: Can build complete applications from data collection to deployment
-- **Cost-Effective**: Mix of free and commercial tools with minimal licensing costs
-
-**Why It Works for Different Engineering Approaches:**
-- ✅ **Individual Engineers**: Manageable learning curve with maximum capability
-- ✅ **Small Teams/Startups**: Cost-effective solution that covers all essential needs
-- ✅ **Cross-Domain Projects**: Skills transfer across biomedical, mechanical, and software engineering
-- ✅ **Rapid Prototyping**: Quick setup and deployment for proof-of-concept projects
-- ✅ **Career Development**: High-value skills that are in-demand across industries
-
-**Best For:**
-- Individual engineers or small teams
-- Startups and small companies
-- Students learning engineering + software development
-- Consultants who need versatile skills
-- Projects requiring quick turnaround
-
-**Key Advantages:**
-- Focused & manageable (not overwhelming)
-- Industry-standard tools
-- Cost-effective ($0-500/year mostly for MATLAB)
-- Scalable architecture
-- Transferable skills across industries
+- [Architecture](#architecture)
+- [Stacks](#stacks)
+  - [Engineering Stack](#engineering-stack)
+  - [App Development Stack](#app-development-stack)
+  - [Domain Systems](#domain-systems)
+- [Project Structure](#project-structure)
+- [Quick Start](#quick-start)
+- [CI/CD & DevOps](#cicd--devops)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
 
 ---
 
-### 03_App-Development-Framework: The Modern Application Solution
+## 🧱 Architecture
 
-**Functionality:**
-- **Full-Stack Development**: Next.js (React), Flutter, Express.js for complete web and mobile applications
-- **Modern Tech Stack**: TypeScript, Tailwind CSS, PostgreSQL, Prisma ORM
-- **Cloud-Native**: AWS and Google Cloud deployment with Docker containerization
-- **Production-Ready**: CI/CD workflows, testing frameworks, and best practices
-- **Comprehensive Documentation**: Complete guides for web/mobile development, backend architecture, and deployment
+> Diagram file: `./docs/diagrams/unified_architecture.png`  
+> (Embed in GitHub with: `![Unified Architecture](./docs/diagrams/unified_architecture.png)`)
 
-**Why It Works for Different Engineering Approaches:**
-- ✅ **Engineering Applications**: Build user-friendly interfaces for engineering tools and data visualization
-- ✅ **Biomedical Apps**: Create patient monitoring systems, medical device interfaces, and health data dashboards
-- ✅ **Mechanical Control Systems**: Develop real-time monitoring dashboards for sensors, actuators, and control systems
-- ✅ **Data Engineering**: Build ETL pipelines, data warehouses, and analytics platforms
-- ✅ **Commercial Products**: Transform engineering prototypes into production-ready applications
+At a high level:
 
-**Best For:**
-- Engineers building user-facing applications
-- Teams creating commercial products from engineering solutions
-- Projects requiring web and mobile interfaces
-- Applications needing cloud deployment and scalability
-- Full-stack development projects
-
-**Key Features:**
-- Production-ready templates
-- Complete setup guides for all platforms
-- Industry best practices and coding standards
-- Cloud-native deployment (AWS/GCP)
-- CI/CD workflows with GitHub Actions
-- Comprehensive documentation
+- The **Engineering Stack** handles numerical methods, modeling, simulation, and analysis.
+- The **App Development Stack** turns those capabilities into web and mobile products.
+- The **DevOps Layer** makes everything reproducible, testable, and deployable.
+- **Domain Systems** (GlucoLoop, HeartWire, HealthHelper, JonnyJr) sit on top and orchestrate the ecosystem.
 
 ---
 
-## 🤔 Which Tech Stack Should You Choose?
+## 🧩 Stacks
 
-### Choose **Comprehensive** (01) if you:
-- Need to cover multiple engineering disciplines simultaneously
-- Have a large team with specialized roles
-- Work in an academic or research environment
-- Have budget for commercial software licenses
-- Want to explore all available options
-- Require advanced simulation capabilities (FEA, CFD, multiphysics)
+### 🧪 Engineering Stack
 
-### Choose **Optimized** (02) if you:
-- Want maximum impact with minimal complexity
-- Are an individual engineer or small team
-- Need to build modern applications quickly
-- Want transferable skills across industries
-- Prefer a focused, manageable learning path
-- Need cost-effective solutions
-- Want to combine engineering calculations with app development
+Located in [`./01_Comprehensive_TechStack`](./01_Comprehensive_TechStack) and [`./02_Optimized_TechStack`](./02_Optimized_TechStack).
 
-### Choose **App-Development-Framework** (03) if you:
-- Need to build user-facing web or mobile applications
-- Want to create commercial products from engineering solutions
-- Require modern, production-ready application architecture
-- Need cloud deployment and scalability
-- Want comprehensive documentation and best practices
-- Are building full-stack applications
-- Need to integrate engineering tools with modern web/mobile interfaces
+This is the core **Engineering Tech Stack** with two modes.
+
+#### 01 — Comprehensive Stack (`01_Comprehensive_TechStack`)
+
+The "full lab" setup.
+
+- **Languages**: MATLAB, Python, R, C/C++, SQL  
+- **Simulation / CAD / FEA**:
+  - COMSOL Multiphysics
+  - SolidWorks / Fusion 360
+  - ANSYS (CFD + Structural)
+  - Simulink
+  - LabVIEW
+- **Use Cases**:
+  - Multiphysics simulation
+  - Biomedical & mechanical modeling
+  - Control systems
+  - Research-grade scientific computing
+
+Best for **research, multi-disciplinary work, and heavy simulation**.
+
+#### 02 — Optimized Stack (`02_Optimized_TechStack`)
+
+The "lean and fast" setup built around **MATLAB + Python + SQL**.
+
+- MATLAB for modeling & numerical analysis
+- Python for data pipelines, automation, ML, APIs
+- SQL / PostgreSQL for storage and analytics
+- Optional FastAPI/Express bridge into the app stack
+
+Best for **engineering apps, startups, and quick iteration**.
 
 ---
 
-## 🎯 Quick Start Guides
+### 🖥 App Development Stack
 
-### For Comprehensive Stack:
+Located in [`./03_App-Development-Framework`](./03_App-Development-Framework).
+
+This is the **App Development Framework** for web, mobile, and backend services.
+
+#### Web Frontend — `03_App-Development-Framework/web-frontend`
+
+- Next.js 14+
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+Use this for:
+
+- Dashboards (GlucoLoop, HealthHelper)
+- HeartWire UI
+- Admin/control panels
+
+#### Mobile App — `03_App-Development-Framework/mobile-app`
+
+- Flutter
+- Dart
+- Material / Cupertino widgets
+
+Use this for:
+
+- Companion apps to GlucoLoop / HealthHelper
+- Mobile interfaces for your engineering tools
+
+#### Backend — `03_App-Development-Framework/backend`
+
+- Express.js or FastAPI implementation
+- PostgreSQL + Prisma ORM (or SQL tooling)
+- JWT auth (extendable to OAuth2 / provider logins)
+- Acts as the **bridge** between engineering outputs and user-facing apps
+
+---
+
+### 🩺 Domain Systems
+
+Located in [`./systems`](./systems) (to be created).
+
+These are **product-level architectures** built on top of the Engineering and App stacks.  
+Each system has its own README with data models, API design, and roadmap (MVP → v1.0 → v2.0).
+
+#### 📈 GlucoLoop — Closed-Loop Glucose Insights
+
+Folder: [`systems/glucoloop`](./systems/glucoloop)
+
+GlucoLoop is a **data pipeline + analytics system** for continuous glucose monitoring (CGM) style workflows:
+
+- Ingests CGM or manual glucose data
+- Cleans and resamples streams
+- Extracts features and predicts trends
+- Delivers alerts, summaries, and recommendations to web/mobile clients
+
+**⚠️ Important**: This is not medical advice. It's an **engineering and research tool** prototype.
+
+##### High-Level Architecture
+
+```text
+        ┌──────────────────────────────┐
+        │        Wearable CGM         │
+        │  (Libre / Dexcom / Sensor)  │
+        └─────────────┬────────────────┘
+                      │  (raw glucose, timestamps)
+                      v
+        ┌──────────────────────────────┐
+        │  Microcontroller / Phone    │
+        │  Ingestion Layer            │
+        │  (Arduino / Phone App / BT) │
+        └─────────────┬────────────────┘
+                      │  (preprocessed stream)
+                      v
+        ┌──────────────────────────────┐
+        │  Data Pipeline (Python)     │
+        │  - Cleaning                 │
+        │  - Resampling               │
+        │  - Feature extraction       │
+        └─────────────┬────────────────┘
+                      │  (feature vectors, trends)
+                      v
+        ┌──────────────────────────────┐
+        │  Modeling & Analytics        │
+        │  (MATLAB + Python)          │
+        │  - Trend prediction         │
+        │  - Hypo/hyper alerts        │
+        │  - Model personalization    │
+        └─────────────┬────────────────┘
+                      │  (insights, risk scores)
+                      v
+        ┌──────────────────────────────┐
+        │  Backend API (FastAPI/Expr.)│
+        │  - REST endpoints           │
+        │  - Auth / users / devices   │
+        │  - Writes to PostgreSQL     │
+        └─────────────┬────────────────┘
+                      │
+          ┌───────────┴────────────┐
+          v                        v
+┌────────────────────┐    ┌───────────────────────┐
+│ Web Dashboard       │    │ Mobile App (Flutter) │
+│ (Next.js / React)   │    │ - Alerts             │
+│ - Trends & charts   │    │ - Daily summaries    │
+│ - Model status      │    │ - Reminders          │
+└────────────────────┘    └───────────────────────┘
+```
+
+**Alerts/feedback loop:**
+- Notification service (email/push/SMS)
+- Behavior suggestions (eat, dose, log event)
+
+See: [`systems/glucoloop/README.md`](./systems/glucoloop/README.md)
+
+---
+
+#### 💻 HeartWire — Personal + Startup Hub
+
+Folder: [`systems/heartwire`](./systems/heartwire)
+
+HeartWire is the **central hub** for:
+
+- Your portfolio
+- Your apps (web, mobile, engineering tools)
+- Live dashboards
+- Content and experiments
+
+It's the "front door" into your entire ecosystem, both **personal** and **professional**.
+
+##### High-Level Architecture
+
+```text
+                     ┌────────────────────────────┐
+                     │       HeartWire UI         │
+                     │    (Next.js web app)       │
+                     └─────────────┬──────────────┘
+                                   │
+                                   v
+                     ┌────────────────────────────┐
+                     │    HeartWire Backend       │
+                     │ (FastAPI / Express.js)     │
+                     │ - Auth & sessions          │
+                     │ - User config              │
+                     │ - System registry          │
+                     └─────────────┬──────────────┘
+                                   │
+      ┌────────────────────────────┼────────────────────────────────────┐
+      v                            v                                    v
+┌───────────────┐       ┌───────────────────────┐           ┌──────────────────┐
+│ Apps & Systems│       │ Engineering Gateway  │           │ Content / Notion  │
+│ - GlucoLoop   │       │ - MATLAB APIs        │           │ - Notes, docs     │
+│ - HealthHelper│       │ - Python tools       │           │ - Knowledge base  │
+│ - JonnyJr     │       └───────────────────────┘           └──────────────────┘
+└───────────────┘
+```
+
+**Data & Storage:**
+- PostgreSQL for user profiles, app metadata, dashboard config
+- Optional S3/GCS for files/assets
+
+HeartWire = the "home base" that:
+- Shows everything you're building
+- Links engineering tools to real interfaces
+- Hosts public/private views for personal vs professional use
+
+See: [`systems/heartwire/README.md`](./systems/heartwire/README.md)
+
+---
+
+#### 🩹 HealthHelper — Unified Health Tracking & Analytics
+
+Folder: [`systems/healthhelper`](./systems/healthhelper)
+
+HealthHelper is a **data aggregation and analytics layer** for:
+
+- Sleep
+- Stress
+- Nutrition
+- Symptoms
+- Training (gym, BJJ, cardio, etc.)
+
+Goal: create a **unified, queryable health dataset** and build simple, actionable insights on top.
+
+##### High-Level Architecture
+
+```text
+    ┌──────────────────────────┐
+    │  Input Sources           │
+    │ - Manual logs (apps)    │
+    │ - Wearables APIs        │
+    │ - CSV / exports         │
+    └───────────┬─────────────┘
+                │
+                v
+    ┌──────────────────────────┐
+    │  Ingestion Layer         │
+    │ - Python ETL scripts     │
+    │ - API collectors         │
+    │ - Data normalization     │
+    └───────────┬─────────────┘
+                │ (normalized events)
+                v
+    ┌──────────────────────────┐
+    │ Unified Health Data Model│
+    │ (PostgreSQL)             │
+    │ - tables: sleep, meals,  │
+    │   symptoms, training...  │
+    └───────────┬─────────────┘
+                │
+                v
+    ┌──────────────────────────┐
+    │ Analytics & Modeling     │
+    │ - Python / MATLAB        │
+    │ - Correlations           │
+    │ - Trend detection        │
+    │ - Simple predictions     │
+    └───────────┬─────────────┘
+                │
+                v
+    ┌──────────────────────────┐
+    │  Frontend (Web/Mobile)   │
+    │  - Dashboards            │
+    │  - Reports               │
+    └──────────────────────────┘
+```
+
+**Outputs:**
+- Daily / weekly summary
+- Simple "levers" (what helps / hurts)
+- Basis for future ML/AI modules
+
+See: [`systems/healthhelper/README.md`](./systems/healthhelper/README.md)
+
+---
+
+#### 🤖 JonnyJr — AI Super-Agent & Orchestrator
+
+Folder: [`systems/jonnyjr`](./systems/jonnyjr)
+
+JonnyJr is the **AI control layer** over your ecosystem.
+
+- Routes user requests to appropriate agents
+- Connects to external tools (GitHub, Notion, Make.com, etc.)
+- Maintains memory and schedules
+- Acts like a "personal operations brain" for projects, tasks, and learning
+
+**Categories:**
+- Personal projects
+- Tasks + reminders
+- AI + research
+- Homework help
+- Sciences, math + programming
+
+JonnyJr acts as:
+- A front-end to your tools (GitHub, Notion, etc.)
+- A router that picks the right workflow
+- A planner that breaks down tasks
+- A memory layer that keeps things persistent
+
+##### High-Level Architecture
+
+```text
+                 ┌───────────────────────────┐
+                 │       User Interface      │
+                 │  - Chat (web / app)       │
+                 │  - CLI / IDE integrations │
+                 └───────────┬───────────────┘
+                             │
+                             v
+                 ┌───────────────────────────┐
+                 │   Orchestrator / Router   │
+                 │  - Classifies requests    │
+                 │  - Selects agents         │
+                 │  - Maintains context      │
+                 └───────┬─────────┬─────────┘
+                         │         │
+         ┌───────────────┘         └─────────────────────┐
+         v                                             v
+ ┌───────────────────┐                        ┌─────────────────────┐
+ │ Core LLM Layer    │                        │ Tools & Connectors  │
+ │ - OpenAI / others │                        │ - GitHub, Notion    │
+ │ - System prompts  │                        │ - Make.com, APIs    │
+ │ - Personality     │                        │ - Calendar, email   │
+ └─────────┬─────────┘                        └─────────┬───────────┘
+           │                                            │
+   ┌───────┴────────┐                         ┌─────────┴───────────┐
+   v                v                         v                     v
+┌───────────┐ ┌─────────────┐        ┌────────────────┐    ┌─────────────────┐
+│ Agents:   │ │ Agents:     │        │ Memory / State │    │ Schedulers      │
+│ Homework  │ │ Projects    │        │ - Vector store │    │ - Task reminders│
+│ Helper    │ │ Engineering │        │ - Task DB      │    │ - Recurring jobs│
+└───────────┘ └─────────────┘        └────────────────┘    └─────────────────┘
+```
+
+See: [`systems/jonnyjr/README.md`](./systems/jonnyjr/README.md)
+
+---
+
+## 🗂 Project Structure
+
+Target structure for this repo:
+
+```text
+/
+├── 01_Comprehensive_TechStack/        # Comprehensive engineering stack
+│   ├── cad_models/
+│   ├── documentation/
+│   ├── matlab/
+│   ├── python/
+│   ├── resources/
+│   └── simulations/
+│
+├── 02_Optimized_TechStack/           # Optimized engineering stack
+│   ├── OPTIMIZED_TECH_STACK.md
+│   ├── requirements_optimized.txt
+│   ├── sample_app_structure.py
+│   └── setup_optimized_stack.py
+│
+├── 03_App-Development-Framework/     # App development framework
+│   ├── README.md
+│   ├── README-API.md
+│   ├── README-CONTRIBUTING.md
+│   ├── README-DEPLOYMENT.md
+│   ├── README-PROJECT.md
+│   ├── README-TECHSTACK.md
+│   └── prompts for apps
+│
+├── systems/                          # Domain-level systems (to be created)
+│   ├── glucoloop/
+│   │   └── README.md
+│   ├── heartwire/
+│   │   └── README.md
+│   ├── healthhelper/
+│   │   └── README.md
+│   └── jonnyjr/
+│       └── README.md
+│
+├── engineering/                      # Shared engineering utilities (future)
+│   └── shared/
+│       ├── datasets/
+│       ├── notebooks/
+│       └── utils/
+│
+├── apps/                             # App development framework (future)
+│   ├── web-frontend/
+│   ├── mobile-app/
+│   └── backend/
+│
+├── devops/                           # Infra, Docker, CI/CD templates (future)
+│   ├── docker/
+│   ├── ci_cd/
+│   └── infra/
+│       ├── aws/
+│       └── gcp/
+│
+├── docs/                             # Documentation & diagrams (future)
+│   ├── README-ENGINEERING.md
+│   ├── README-APPS.md
+│   ├── README-SYSTEMS.md
+│   └── diagrams/
+│       └── unified_architecture.png
+│
+└── .github/
+    └── workflows/                    # CI/CD (GitHub Actions)
+```
+
+---
+
+## ⚡ Quick Start
+
+### 1. Engineering (Optimized Stack)
+
+```bash
+cd 02_Optimized_TechStack
+pip install -r requirements_optimized.txt
+python setup_optimized_stack.py
+# add your own scripts / notebooks under python_pipelines/
+```
+
+### 2. Engineering (Comprehensive Stack)
+
 ```bash
 cd 01_Comprehensive_TechStack
 # Follow the installation guide in documentation/setup_guides/
 ```
 
-### For Optimized Stack:
-```bash
-cd 02_Optimized_TechStack
-pip install -r requirements_optimized.txt
-python setup_optimized_stack.py
-python sample_app_structure.py
-```
+### 3. Web Frontend (Next.js)
 
-### For App Development Framework:
 ```bash
 cd 03_App-Development-Framework
-
-# For web development
+# Navigate to web-frontend directory when created
 npm install
 npm run dev
+# visit http://localhost:3000
+```
 
-# For mobile development
+### 4. Mobile App (Flutter)
+
+```bash
+cd 03_App-Development-Framework
+# Navigate to mobile-app directory when created
 flutter pub get
 flutter run
 ```
 
----
+### 5. Backend (Express/FastAPI)
 
-## 💡 The Story Behind These Stacks
+```bash
+cd 03_App-Development-Framework
+# Navigate to backend directory when created
 
-This repository evolved from a simple question: *"Can you create a tech stack that includes MATLAB, Python, and whatever the best programs are for biomedical/mechanical engineering?"*
+# if Node/Express:
+npm install
+npm run dev
 
-### Evolution Timeline:
-
-1. **Comprehensive Stack (01)**: The first approach created an extensive collection of all the best tools - perfect for exploring all possibilities.
-
-2. **Optimized Stack (02)**: When you asked *"I was thinking of making a tech stack with MATLAB, Python, and SQL? What else should I add to make an efficient stack?"* - we realized your core idea was brilliant! This focused version builds on your foundation with strategic additions.
-
-3. **App Development Framework (03)**: Recognizing that modern engineers need to build applications, not just calculations, we added a complete full-stack framework for creating production-ready web and mobile applications.
-
----
-
-## 🔄 How the Stacks Work Together
-
-While each stack can be used independently, they can also complement each other:
-
-### Example Workflow: Engineering Application Development
-
-1. **Use Comprehensive Stack (01)** for:
-   - Advanced simulations and analysis
-   - CAD modeling and design
-   - Specialized engineering calculations
-
-2. **Use Optimized Stack (02)** for:
-   - Data processing and analysis
-   - Backend API development
-   - Engineering algorithm implementation
-
-3. **Use App Development Framework (03)** for:
-   - User interface development
-   - Mobile app creation
-   - Cloud deployment and scaling
-
-### Integration Example:
-```
-Engineering Calculations (MATLAB - Stack 01/02)
-    ↓
-Data Processing (Python - Stack 02)
-    ↓
-Backend API (FastAPI/Express - Stack 02/03)
-    ↓
-Frontend Interface (React/Flutter - Stack 03)
-    ↓
-Cloud Deployment (AWS/GCP - Stack 03)
+# if FastAPI variant:
+# pip install -r requirements.txt
+# uvicorn main:app --reload
 ```
 
 ---
 
-## 🎉 All Three Approaches Are Valid
+## 🛠 CI/CD & DevOps
 
-- **Comprehensive (01)**: Perfect for exploring all possibilities and supporting diverse teams
-- **Optimized (02)**: Perfect for focused, efficient development with maximum ROI
-- **App Development (03)**: Perfect for building modern, production-ready applications
+All CI/CD pipelines live under:
 
-Choose the one that fits your needs, or use all three as reference materials for different aspects of your projects!
+* `.github/workflows/` (active GitHub Actions)
+* `devops/ci_cd/` (source-of-truth templates - to be created)
+
+Typical workflows:
+
+* ✅ **Web Frontend CI**  
+  Build, lint, test Next.js app on pushes/PRs to `apps/web-frontend/**`.
+
+* ✅ **Mobile App CI**  
+  Analyze and test Flutter app on pushes/PRs to `apps/mobile-app/**`.
+
+* ✅ **Backend CI**  
+  Lint, test, and (optionally) build backend on pushes/PRs to `apps/backend/**`.
+
+* ✅ **Docker Build Pipelines**  
+  Build and push backend images (e.g., to GHCR) via `devops/docker/backend.Dockerfile`.
+
+You can extend this to:
+
+* ECS/Fargate deployment
+* Lambda/APIGW deployment
+* GCP (Cloud Run, GKE)
+* Staging vs production environments
 
 ---
 
-## 🚀 Getting Started
+## 🗺 Roadmap
 
-1. **Read the README files** in each folder to understand the differences
-2. **Choose the approach** that fits your situation
-3. **Follow the setup guides** in your chosen folder
-4. **Start building** amazing engineering applications!
+Short version:
+
+* [ ] Fill out `01_Comprehensive_TechStack` and `02_Optimized_TechStack` with concrete examples and scripts.
+* [ ] Implement base Next.js + Flutter skeletons under `03_App-Development-Framework/apps/`.
+* [ ] Create `systems/` directory structure with base implementations for:
+  * GlucoLoop
+  * HealthHelper
+  * HeartWire
+  * JonnyJr
+* [ ] Build MVP endpoints and schemas for each domain system.
+* [ ] Wire CI/CD pipelines to at least:
+  * test
+  * build
+  * (optionally) deploy
+* [ ] Integrate external services (GitHub, Notion, Make.com, etc.) via JonnyJr.
+* [ ] Create unified architecture diagram in `docs/diagrams/`.
+* [ ] Set up shared engineering utilities in `engineering/shared/`.
 
 ---
 
-## 📚 Documentation Structure
+## 🤝 Contributing
 
-Each tech stack includes comprehensive documentation:
+This repo is structured as a **personal + startup monorepo**, but contributions can still be managed cleanly.
 
-- **01_Comprehensive_TechStack**: Installation guides, software lists, tutorials
-- **02_Optimized_TechStack**: Setup scripts, sample applications, detailed analysis
-- **03_App-Development-Framework**: Project setup, tech stack details, API documentation, deployment guides, contributing guidelines
+Recommended conventions:
+
+* Feature branches: `feature/<area>-<short-desc>`
+* Use PRs even for solo work to keep a review/history trail.
+* Keep documentation updated in `docs/` and per-system `README.md`s.
+
+If you open-source parts of this, add:
+
+* `CONTRIBUTING.md`
+* `CODE_OF_CONDUCT.md`
+* Issue / PR templates under `.github/`
 
 ---
 
-## 🆘 Support & Resources
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+See [`LICENSE`](./LICENSE) for details.
+
+---
+
+## 🆘 Support
 
 - 📖 Check the documentation in each folder's README files
 - 🐛 Report issues on GitHub
@@ -262,12 +607,4 @@ Each tech stack includes comprehensive documentation:
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
----
-
-**Happy Engineering!** 🔧⚙️🧬💻
-
-*Build amazing engineering applications with the right tools for your needs!*
+**Ready to build your next application?** Start with the Quick Start guides and let's create something amazing! 🚀
